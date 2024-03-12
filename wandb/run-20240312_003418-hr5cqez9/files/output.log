@@ -1,0 +1,28 @@
+
+['oct_1f', 'oct_2f', 'nov_1f', 'nov_2f', 'dec_1f', 'dec_2f', 'jan_1f', 'jan_2f', 'feb_1f', 'feb_2f', 'mar_1f', 'mar_2f', 'apr_1f', 'apr_2f', 'crop_type']
+Traceback (most recent call last):
+  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 17, in run_experiment
+    preprocessed_data, _ = rabi_data_preprocess(preprocess_dict['input_path'])
+  File "/scratchi/KDSS/kdss_ml/src/crop_type_classification/preprocess.py", line 34, in rabi_data_preprocess
+    data = data.apply(dip_impute, axis=1)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/frame.py", line 10347, in apply
+    return op.apply().__finalize__(self, method="apply")
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/apply.py", line 916, in apply
+    return self.apply_standard()
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/apply.py", line 1063, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/apply.py", line 1081, in apply_series_generator
+    results[i] = self.func(v, *self.args, **self.kwargs)
+  File "/scratchi/KDSS/kdss_ml/src/utils/helper.py", line 31, in dip_impute
+    for i in range(len(lst.loc['oct_2f':'apr_1f'])):
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/indexing.py", line 1192, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/indexing.py", line 1412, in _getitem_axis
+    return self._get_slice_axis(key, axis=axis)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/indexing.py", line 1444, in _get_slice_axis
+    indexer = labels.slice_indexer(slice_obj.start, slice_obj.stop, slice_obj.step)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6661, in slice_indexer
+    start_slice, end_slice = self.slice_locs(start, end, step=step)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 6871, in slice_locs
+    pass
+KeyboardInterrupt

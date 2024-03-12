@@ -1,0 +1,14 @@
+
+Data Preprocessing done!
+Traceback (most recent call last):
+  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 34, in run_experiment
+    X_train, X_test, X_val = feature_scaling(X_train, X_test, X_val,
+  File "/scratchi/KDSS/kdss_ml/src/crop_type_classification/featurize.py", line 38, in feature_scaling
+    X_train = pd.DataFrame(scaler.fit_transform(X_train), columns=rabi_fns)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/frame.py", line 816, in __init__
+    mgr = ndarray_to_mgr(
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 336, in ndarray_to_mgr
+    _check_values_indices_shape_match(values, index, columns)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/pandas/core/internals/construction.py", line 420, in _check_values_indices_shape_match
+    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+ValueError: Shape of passed values is (14334, 14), indices imply (14334, 15)

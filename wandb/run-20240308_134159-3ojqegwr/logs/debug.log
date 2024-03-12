@@ -1,0 +1,34 @@
+2024-03-08 13:41:59,918 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-08 13:41:59,919 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Configure stats pid to 3601
+2024-03-08 13:41:59,919 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Loading settings from /home/users/krishnas/.config/wandb/settings
+2024-03-08 13:41:59,919 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Loading settings from /scratchi/KDSS/crop_type_classification/wandb/settings
+2024-03-08 13:41:59,919 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-08 13:41:59,919 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-08 13:41:59,920 INFO    MainThread:3601 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'pipepine.py', 'program_abspath': '/scratchi/KDSS/crop_type_classification/pipepine.py', 'program': '/scratchi/KDSS/crop_type_classification/pipepine.py'}
+2024-03-08 13:41:59,920 INFO    MainThread:3601 [wandb_init.py:_log_setup():526] Logging user logs to /scratchi/KDSS/crop_type_classification/wandb/run-20240308_134159-3ojqegwr/logs/debug.log
+2024-03-08 13:41:59,921 INFO    MainThread:3601 [wandb_init.py:_log_setup():527] Logging internal logs to /scratchi/KDSS/crop_type_classification/wandb/run-20240308_134159-3ojqegwr/logs/debug-internal.log
+2024-03-08 13:41:59,921 INFO    MainThread:3601 [wandb_init.py:init():566] calling init triggers
+2024-03-08 13:41:59,922 INFO    MainThread:3601 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'dataset': {'cleaning': {'input_path': '/scratchi/KDSS/crop_type_classification/data/master_pickle_raw.csv', 'output_path': '/scratchi/KDSS/crop_type_classification/data/processed_data.csv'}, 'featurization': {'input_path': '/scratchi/KDSS/crop_type_classification/data/processed_data.csv', 'output_train_path': '/scratchi/KDSS/crop_type_classification/data/train.csv', 'output_val_path': '/scratchi/KDSS/crop_type_classification/data/val.csv', 'output_test_path': '/scratchi/KDSS/crop_type_classification/data/test.csv'}}, 'featurize': {'target_col': 'crop', 'train_test_split': {'seed': 43, 'train_size': 0.6, 'val_size': 0.2, 'test_size': 0.2, 'stratify': {'boolean': True, 'cols': ['crop', 'sowing_period', 'harvest_period']}}, 'scaler': 'StandardScaler'}, 'model': {'trained_models': {'path': '../models/trained_models/classifier.pkl'}}, 'train': {'target_col': 'crop', 'model_type': 'XGBClassifier', 'raw_metric': 'precision', 'tuning_metric_type': 'harmonic_mean', 'seed': 42, 'n_estimators': {'start': 10, 'end': 100}, 'learning_rate': {'start': 0.01, 'end': 0.6}, 'max_depth': {'start': 1, 'end': 10}}}
+2024-03-08 13:41:59,923 INFO    MainThread:3601 [wandb_init.py:init():616] starting backend
+2024-03-08 13:41:59,923 INFO    MainThread:3601 [wandb_init.py:init():620] setting up manager
+2024-03-08 13:41:59,934 INFO    MainThread:3601 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-08 13:41:59,937 INFO    MainThread:3601 [wandb_init.py:init():628] backend started and connected
+2024-03-08 13:41:59,958 INFO    MainThread:3601 [wandb_init.py:init():720] updated telemetry
+2024-03-08 13:41:59,961 INFO    MainThread:3601 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-08 13:42:00,680 INFO    MainThread:3601 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-08 13:42:00,732 INFO    MainThread:3601 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-08 13:42:00,732 INFO    MainThread:3601 [wandb_init.py:init():804] starting run threads in backend
+2024-03-08 13:42:05,769 INFO    MainThread:3601 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-08 13:42:05,770 INFO    MainThread:3601 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-08 13:42:05,770 INFO    MainThread:3601 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-08 13:42:05,770 INFO    MainThread:3601 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-08 13:42:05,771 INFO    MainThread:3601 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-08 13:42:05,773 INFO    MainThread:3601 [wandb_run.py:_finish():1970] finishing run wadhwani/KDSS/3ojqegwr
+2024-03-08 13:42:05,773 INFO    MainThread:3601 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 1
+2024-03-08 13:42:05,773 INFO    MainThread:3601 [wandb_run.py:_restore():2193] restore
+2024-03-08 13:42:05,773 INFO    MainThread:3601 [wandb_run.py:_restore():2199] restore done
+2024-03-08 13:42:13,472 INFO    MainThread:3601 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-08 13:42:13,473 INFO    MainThread:3601 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-08 13:42:13,480 INFO    MainThread:3601 [wandb_run.py:_footer_sync_info():3825] logging synced files

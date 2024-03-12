@@ -1,0 +1,12 @@
+defaults:
+ - artifact_paths: paths
+ - featurize: featurization
+ - train: modelling
+ - splits:
+    - train
+    - test
+    - val
+ - _self_
+
+cleaning:
+  output_path: ${hydra:runtime.cwd}/data/rabi_v1.0

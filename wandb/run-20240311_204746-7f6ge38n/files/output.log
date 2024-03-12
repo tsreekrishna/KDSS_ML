@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 24, in run_experiment
+    train, test, val =  train_test_split(data=preprocessed_data,
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 191, in wrapper
+    params = func_sig.bind(*args, **kwargs)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/inspect.py", line 3045, in bind
+    return self._bind(args, kwargs)
+  File "/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/lib/python3.9/inspect.py", line 3034, in _bind
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'data'

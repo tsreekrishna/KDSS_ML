@@ -1,0 +1,8 @@
+target: crop_type
+model_type: XGBClassifier
+raw_metric: precision
+tuning_metric_type: harmonic_mean
+seed: 42
+n_estimators: [10, 100]
+learning_rate: [0.01, 0.6]
+max_depth: [1, 10]

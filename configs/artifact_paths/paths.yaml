@@ -1,0 +1,5 @@
+cleaning:
+  input_path: ${hydra:runtime.cwd}/artifacts/data/raw/master_pickle.pkl
+  output_path: ${hydra:runtime.cwd}/artifacts/data/preprocessed/processed_data.pkl
+trained_models:
+  path: ${hydra:runtime.cwd}/artifacts/trained_models/classifier.pkl

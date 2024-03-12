@@ -1,0 +1,84 @@
+wandb_version: 1
+
+dataset:
+  desc: null
+  value:
+    cleaning:
+      input_path: /scratchi/KDSS/crop_type_classification/data/raw_bronze_format.csv
+      output_path: /scratchi/KDSS/crop_type_classification/data/processed_bronze_format.csv
+    featurization:
+      input_path: /scratchi/KDSS/crop_type_classification/data/processed_bronze_format.csv
+      output_train_path: /scratchi/KDSS/crop_type_classification/data/train.csv
+      output_val_path: /scratchi/KDSS/crop_type_classification/data/val.csv
+      output_test_path: /scratchi/KDSS/crop_type_classification/data/test.csv
+featurize:
+  desc: null
+  value:
+    target_col: crop
+    train_test_split:
+      seed: 43
+      train_size: 0.6
+      val_size: 0.2
+      test_size: 0.2
+      stratify:
+        boolean: true
+        cols:
+        - crop
+        - sowing_period
+        - harvest_period
+    scaler: StandardScaler
+model:
+  desc: null
+  value:
+    trained_models:
+      path: ../models/trained_models/classifier.pkl
+train:
+  desc: null
+  value:
+    target_col: crop
+    model_type: XGBClassifier
+    raw_metric: precision
+    tuning_metric_type: harmonic_mean
+    seed: 42
+    n_estimators:
+      start: 10
+      end: 100
+    learning_rate:
+      start: 0.01
+      end: 0.6
+    max_depth:
+      start: 1
+      end: 10
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.18
+    cli_version: 0.16.3
+    framework: xgboost
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1709885433.11303
+    t:
+      1:
+      - 1
+      - 5
+      - 6
+      - 50
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 6
+      - 50
+      - 53
+      - 55
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.9.18
+      5: 0.16.3
+      8:
+      - 5
+      13: linux-x86_64

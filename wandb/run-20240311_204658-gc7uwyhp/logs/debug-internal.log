@@ -1,0 +1,201 @@
+2024-03-11 20:46:58,594 INFO    StreamThr :25404 [internal.py:wandb_internal():86] W&B internal server running at pid: 25404, started at: 2024-03-11 20:46:58.592390
+2024-03-11 20:46:58,595 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status
+2024-03-11 20:46:58,609 INFO    WriterThread:25404 [datastore.py:open_for_write():87] open: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/run-gc7uwyhp.wandb
+2024-03-11 20:46:58,612 DEBUG   SenderThread:25404 [sender.py:send():382] send: header
+2024-03-11 20:46:58,612 DEBUG   SenderThread:25404 [sender.py:send():382] send: run
+2024-03-11 20:46:59,288 INFO    SenderThread:25404 [dir_watcher.py:__init__():211] watching files in: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files
+2024-03-11 20:46:59,288 INFO    SenderThread:25404 [sender.py:_start_run_threads():1136] run started: gc7uwyhp with start time 1710170218.593072
+2024-03-11 20:46:59,302 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: check_version
+2024-03-11 20:46:59,302 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: check_version
+2024-03-11 20:46:59,361 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: run_start
+2024-03-11 20:46:59,375 DEBUG   HandlerThread:25404 [system_info.py:__init__():27] System info init
+2024-03-11 20:46:59,375 DEBUG   HandlerThread:25404 [system_info.py:__init__():42] System info init done
+2024-03-11 20:46:59,375 INFO    HandlerThread:25404 [system_monitor.py:start():194] Starting system monitor
+2024-03-11 20:46:59,375 INFO    SystemMonitor:25404 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-11 20:46:59,375 INFO    HandlerThread:25404 [system_monitor.py:probe():214] Collecting system info
+2024-03-11 20:46:59,376 INFO    SystemMonitor:25404 [interfaces.py:start():190] Started cpu monitoring
+2024-03-11 20:46:59,376 INFO    SystemMonitor:25404 [interfaces.py:start():190] Started disk monitoring
+2024-03-11 20:46:59,377 INFO    SystemMonitor:25404 [interfaces.py:start():190] Started gpu monitoring
+2024-03-11 20:46:59,379 INFO    SystemMonitor:25404 [interfaces.py:start():190] Started memory monitoring
+2024-03-11 20:46:59,381 INFO    SystemMonitor:25404 [interfaces.py:start():190] Started network monitoring
+2024-03-11 20:46:59,445 DEBUG   HandlerThread:25404 [system_info.py:probe():151] Probing system
+2024-03-11 20:46:59,455 DEBUG   HandlerThread:25404 [system_info.py:_probe_git():136] Probing git
+2024-03-11 20:46:59,465 DEBUG   HandlerThread:25404 [system_info.py:_probe_git():144] Probing git done
+2024-03-11 20:46:59,465 DEBUG   HandlerThread:25404 [system_info.py:probe():199] Probing system done
+2024-03-11 20:46:59,465 DEBUG   HandlerThread:25404 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-204-generic-x86_64-with-glibc2.27', 'python': '3.9.18', 'heartbeatAt': '2024-03-11T15:16:59.445704', 'startedAt': '2024-03-11T15:16:58.515574', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/scratchi/KDSS/kdss_ml/pipepine.py', 'codePathLocal': 'pipepine.py', 'codePath': 'pipepine.py', 'git': {'remote': None, 'commit': None}, 'email': None, 'root': '/scratchi/KDSS/kdss_ml', 'host': 'sif', 'username': 'krishnas', 'executable': '/home/users/krishnas/scratchi/KDSS/miniconda3/envs/kdss/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 2715.9909750000006, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2695.237, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.2, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.982, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.674, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.769, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.761, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.869, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.771, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.782, 'min': 1200.0, 'max': 3600.0}, {'current': 2700.173, 'min': 1200.0, 'max': 3600.0}, {'current': 2702.884, 'min': 1200.0, 'max': 3600.0}, {'current': 2615.899, 'min': 1200.0, 'max': 3600.0}, {'current': 2621.789, 'min': 1200.0, 'max': 3600.0}, {'current': 2692.601, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.547, 'min': 1200.0, 'max': 3600.0}, {'current': 2690.77, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.521, 'min': 1200.0, 'max': 3600.0}, {'current': 2630.981, 'min': 1200.0, 'max': 3600.0}, {'current': 2619.351, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.176, 'min': 1200.0, 'max': 3600.0}, {'current': 2898.303, 'min': 1200.0, 'max': 3600.0}, {'current': 2874.737, 'min': 1200.0, 'max': 3600.0}, {'current': 2784.076, 'min': 1200.0, 'max': 3600.0}, {'current': 3049.127, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.699, 'min': 1200.0, 'max': 3600.0}, {'current': 2736.99, 'min': 1200.0, 'max': 3600.0}, {'current': 2725.975, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.958, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.166, 'min': 1200.0, 'max': 3600.0}, {'current': 2783.36, 'min': 1200.0, 'max': 3600.0}, {'current': 2955.041, 'min': 1200.0, 'max': 3600.0}, {'current': 2957.306, 'min': 1200.0, 'max': 3600.0}, {'current': 3002.981, 'min': 1200.0, 'max': 3600.0}, {'current': 2856.484, 'min': 1200.0, 'max': 3600.0}, {'current': 2697.913, 'min': 1200.0, 'max': 3600.0}, {'current': 2702.504, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.52, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.786, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.826, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.825, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.785, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.782, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.791, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.399, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.774, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.772, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.799, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.774, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.836, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.381, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.882, 'min': 1200.0, 'max': 3600.0}, {'current': 2640.868, 'min': 1200.0, 'max': 3600.0}, {'current': 2627.853, 'min': 1200.0, 'max': 3600.0}, {'current': 2678.936, 'min': 1200.0, 'max': 3600.0}, {'current': 2697.325, 'min': 1200.0, 'max': 3600.0}, {'current': 2643.945, 'min': 1200.0, 'max': 3600.0}, {'current': 2678.437, 'min': 1200.0, 'max': 3600.0}, {'current': 2683.481, 'min': 1200.0, 'max': 3600.0}, {'current': 2641.342, 'min': 1200.0, 'max': 3600.0}, {'current': 2684.711, 'min': 1200.0, 'max': 3600.0}, {'current': 3044.996, 'min': 1200.0, 'max': 3600.0}, {'current': 2849.661, 'min': 1200.0, 'max': 3600.0}, {'current': 2955.166, 'min': 1200.0, 'max': 3600.0}, {'current': 2991.253, 'min': 1200.0, 'max': 3600.0}, {'current': 2991.289, 'min': 1200.0, 'max': 3600.0}, {'current': 3217.612, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.848, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.797, 'min': 1200.0, 'max': 3600.0}, {'current': 2922.164, 'min': 1200.0, 'max': 3600.0}, {'current': 3135.258, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.211, 'min': 1200.0, 'max': 3600.0}, {'current': 3046.646, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.229, 'min': 1200.0, 'max': 3600.0}, {'current': 2695.265, 'min': 1200.0, 'max': 3600.0}, {'current': 2753.244, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.825, 'min': 1200.0, 'max': 3600.0}, {'current': 2718.279, 'min': 1200.0, 'max': 3600.0}, {'current': 2728.392, 'min': 1200.0, 'max': 3600.0}, {'current': 2708.658, 'min': 1200.0, 'max': 3600.0}, {'current': 2708.233, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 438.0733413696289, 'used': 310.82658767700195}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 503.79137802124023}}
+2024-03-11 20:46:59,465 INFO    HandlerThread:25404 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-11 20:46:59,465 INFO    HandlerThread:25404 [system_monitor.py:probe():227] Publishing system info
+2024-03-11 20:46:59,466 DEBUG   HandlerThread:25404 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-11 20:47:00,290 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_created():271] file/dir created: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/conda-environment.yaml
+2024-03-11 20:47:03,632 DEBUG   HandlerThread:25404 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-11 20:47:03,635 INFO    HandlerThread:25404 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-11 20:47:03,642 DEBUG   SenderThread:25404 [sender.py:send():382] send: files
+2024-03-11 20:47:03,642 INFO    SenderThread:25404 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-11 20:47:03,643 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:03,651 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-11 20:47:03,652 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: python_packages
+2024-03-11 20:47:03,652 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 20:47:03,653 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 20:47:03,654 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: stop_status
+2024-03-11 20:47:04,008 DEBUG   SenderThread:25404 [sender.py:send():382] send: telemetry
+2024-03-11 20:47:04,293 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/conda-environment.yaml
+2024-03-11 20:47:04,293 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_created():271] file/dir created: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/requirements.txt
+2024-03-11 20:47:04,293 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_created():271] file/dir created: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-metadata.json
+2024-03-11 20:47:08,918 INFO    wandb-upload_0:25404 [upload_job.py:push():131] Uploaded file /tmp/tmpan0cpqe4wandb/uve2sz9a-wandb-metadata.json
+2024-03-11 20:47:09,009 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:14,010 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:18,786 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 20:47:19,333 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 20:47:19,334 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: stop_status
+2024-03-11 20:47:19,634 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:24,635 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:29,640 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:30,321 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/config.yaml
+2024-03-11 20:47:33,700 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-11 20:47:33,702 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: stop_status
+2024-03-11 20:47:33,755 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 20:47:34,991 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:39,331 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_created():271] file/dir created: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/output.log
+2024-03-11 20:47:39,597 DEBUG   SenderThread:25404 [sender.py:send():382] send: telemetry
+2024-03-11 20:47:39,598 DEBUG   SenderThread:25404 [sender.py:send():382] send: exit
+2024-03-11 20:47:39,598 INFO    SenderThread:25404 [sender.py:send_exit():589] handling exit code: 0
+2024-03-11 20:47:39,599 INFO    SenderThread:25404 [sender.py:send_exit():591] handling runtime: 40
+2024-03-11 20:47:39,601 INFO    SenderThread:25404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-11 20:47:39,602 INFO    SenderThread:25404 [sender.py:send_exit():597] send defer
+2024-03-11 20:47:39,602 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:39,602 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-11 20:47:39,603 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:39,603 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-11 20:47:39,603 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 1
+2024-03-11 20:47:39,603 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:39,603 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-11 20:47:39,603 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:39,603 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-11 20:47:39,603 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 2
+2024-03-11 20:47:39,603 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:39,604 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-11 20:47:39,604 INFO    HandlerThread:25404 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-11 20:47:39,605 INFO    HandlerThread:25404 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-11 20:47:39,605 DEBUG   SystemMonitor:25404 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-11 20:47:39,605 INFO    HandlerThread:25404 [interfaces.py:finish():202] Joined disk monitor
+2024-03-11 20:47:39,605 DEBUG   SystemMonitor:25404 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-11 20:47:39,605 DEBUG   SystemMonitor:25404 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-11 20:47:40,332 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_created():271] file/dir created: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-summary.json
+2024-03-11 20:47:41,334 INFO    Thread-12 :25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/output.log
+2024-03-11 20:47:42,554 INFO    HandlerThread:25404 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-11 20:47:42,555 INFO    HandlerThread:25404 [interfaces.py:finish():202] Joined memory monitor
+2024-03-11 20:47:42,555 INFO    HandlerThread:25404 [interfaces.py:finish():202] Joined network monitor
+2024-03-11 20:47:42,556 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 20:47:42,556 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:42,558 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,558 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-11 20:47:42,558 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 3
+2024-03-11 20:47:42,559 DEBUG   SenderThread:25404 [sender.py:send():382] send: stats
+2024-03-11 20:47:42,561 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-11 20:47:42,565 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:42,565 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-11 20:47:42,565 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,566 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-11 20:47:42,567 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 4
+2024-03-11 20:47:42,567 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:42,567 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-11 20:47:42,568 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,568 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-11 20:47:42,568 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 5
+2024-03-11 20:47:42,568 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:42,569 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-11 20:47:42,569 DEBUG   SenderThread:25404 [sender.py:send():382] send: summary
+2024-03-11 20:47:42,572 INFO    SenderThread:25404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-11 20:47:42,572 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,573 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-11 20:47:42,573 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 6
+2024-03-11 20:47:42,573 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:42,573 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-11 20:47:42,574 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,574 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-11 20:47:42,579 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-11 20:47:42,599 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 20:47:42,865 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 7
+2024-03-11 20:47:42,865 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-11 20:47:42,865 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:42,865 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-11 20:47:42,867 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:42,867 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-11 20:47:43,215 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 8
+2024-03-11 20:47:43,215 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:43,215 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-11 20:47:43,215 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:43,215 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-11 20:47:43,216 INFO    SenderThread:25404 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-11 20:47:43,217 INFO    SenderThread:25404 [job_builder.py:_get_source_type():437] no source found
+2024-03-11 20:47:43,217 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 9
+2024-03-11 20:47:43,217 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:43,217 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-11 20:47:43,218 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:43,218 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-11 20:47:43,218 INFO    SenderThread:25404 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-11 20:47:43,336 INFO    SenderThread:25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/config.yaml
+2024-03-11 20:47:43,336 INFO    SenderThread:25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/output.log
+2024-03-11 20:47:43,336 INFO    SenderThread:25404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-summary.json
+2024-03-11 20:47:43,337 INFO    SenderThread:25404 [dir_watcher.py:finish():388] scan: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files
+2024-03-11 20:47:43,337 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/config.yaml config.yaml
+2024-03-11 20:47:43,337 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/conda-environment.yaml conda-environment.yaml
+2024-03-11 20:47:43,340 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-metadata.json wandb-metadata.json
+2024-03-11 20:47:43,341 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/requirements.txt requirements.txt
+2024-03-11 20:47:43,344 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/output.log output.log
+2024-03-11 20:47:43,345 INFO    SenderThread:25404 [dir_watcher.py:finish():402] scan save: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-summary.json wandb-summary.json
+2024-03-11 20:47:43,347 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 10
+2024-03-11 20:47:43,348 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:43,350 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-11 20:47:43,353 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:43,353 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-11 20:47:43,353 INFO    SenderThread:25404 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-11 20:47:43,600 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 20:47:43,600 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-11 20:47:43,965 INFO    wandb-upload_0:25404 [upload_job.py:push():131] Uploaded file /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/config.yaml
+2024-03-11 20:47:44,057 INFO    wandb-upload_1:25404 [upload_job.py:push():131] Uploaded file /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/conda-environment.yaml
+2024-03-11 20:47:44,079 INFO    wandb-upload_2:25404 [upload_job.py:push():131] Uploaded file /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/requirements.txt
+2024-03-11 20:47:44,081 INFO    wandb-upload_4:25404 [upload_job.py:push():131] Uploaded file /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/wandb-summary.json
+2024-03-11 20:47:44,109 INFO    wandb-upload_3:25404 [upload_job.py:push():131] Uploaded file /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/files/output.log
+2024-03-11 20:47:44,309 INFO    Thread-11 :25404 [sender.py:transition_state():617] send defer: 11
+2024-03-11 20:47:44,310 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:44,310 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-11 20:47:44,310 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:44,311 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-11 20:47:44,311 INFO    SenderThread:25404 [file_pusher.py:join():178] waiting for file pusher
+2024-03-11 20:47:44,311 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 12
+2024-03-11 20:47:44,311 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:44,311 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-11 20:47:44,312 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:44,312 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-11 20:47:44,312 INFO    SenderThread:25404 [file_stream.py:finish():595] file stream finish called
+2024-03-11 20:47:44,601 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 20:47:45,141 INFO    SenderThread:25404 [file_stream.py:finish():599] file stream finish is done
+2024-03-11 20:47:45,141 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 13
+2024-03-11 20:47:45,141 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-11 20:47:45,141 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:45,141 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-11 20:47:45,142 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:45,142 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-11 20:47:45,142 INFO    SenderThread:25404 [sender.py:transition_state():617] send defer: 14
+2024-03-11 20:47:45,142 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: defer
+2024-03-11 20:47:45,143 DEBUG   SenderThread:25404 [sender.py:send():382] send: final
+2024-03-11 20:47:45,143 INFO    HandlerThread:25404 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-11 20:47:45,143 DEBUG   SenderThread:25404 [sender.py:send():382] send: footer
+2024-03-11 20:47:45,143 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: defer
+2024-03-11 20:47:45,143 INFO    SenderThread:25404 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-11 20:47:45,144 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-11 20:47:45,144 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-11 20:47:45,145 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-11 20:47:45,146 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: server_info
+2024-03-11 20:47:45,146 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: server_info
+2024-03-11 20:47:45,187 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-11 20:47:45,187 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-11 20:47:45,187 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: job_info
+2024-03-11 20:47:45,427 DEBUG   SenderThread:25404 [sender.py:send_request():409] send_request: job_info
+2024-03-11 20:47:45,429 DEBUG   HandlerThread:25404 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-11 20:47:45,429 INFO    HandlerThread:25404 [handler.py:finish():869] shutting down handler
+2024-03-11 20:47:46,188 INFO    WriterThread:25404 [datastore.py:close():296] close: /scratchi/KDSS/kdss_ml/wandb/run-20240311_204658-gc7uwyhp/run-gc7uwyhp.wandb
+2024-03-11 20:47:46,428 INFO    SenderThread:25404 [sender.py:finish():1572] shutting down sender
+2024-03-11 20:47:46,428 INFO    SenderThread:25404 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-11 20:47:46,428 INFO    SenderThread:25404 [file_pusher.py:join():178] waiting for file pusher
