@@ -1,0 +1,249 @@
+2024-03-13 12:48:33,366 INFO    StreamThr :70777 [internal.py:wandb_internal():86] W&B internal server running at pid: 70777, started at: 2024-03-13 12:48:33.365552
+2024-03-13 12:48:33,367 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status
+2024-03-13 12:48:33,377 INFO    WriterThread:70777 [datastore.py:open_for_write():87] open: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/run-okqv09pt.wandb
+2024-03-13 12:48:33,378 DEBUG   SenderThread:70777 [sender.py:send():378] send: header
+2024-03-13 12:48:33,406 DEBUG   SenderThread:70777 [sender.py:send():378] send: run
+2024-03-13 12:48:34,214 INFO    SenderThread:70777 [dir_watcher.py:__init__():211] watching files in: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files
+2024-03-13 12:48:34,214 INFO    SenderThread:70777 [sender.py:_start_run_threads():1099] run started: okqv09pt with start time 1710314313.366976
+2024-03-13 12:48:34,231 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: check_version
+2024-03-13 12:48:34,232 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: check_version
+2024-03-13 12:48:34,317 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: run_start
+2024-03-13 12:48:34,325 DEBUG   HandlerThread:70777 [system_info.py:__init__():26] System info init
+2024-03-13 12:48:34,325 DEBUG   HandlerThread:70777 [system_info.py:__init__():41] System info init done
+2024-03-13 12:48:34,325 INFO    HandlerThread:70777 [system_monitor.py:start():194] Starting system monitor
+2024-03-13 12:48:34,325 INFO    SystemMonitor:70777 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-13 12:48:34,325 INFO    HandlerThread:70777 [system_monitor.py:probe():214] Collecting system info
+2024-03-13 12:48:34,326 INFO    SystemMonitor:70777 [interfaces.py:start():190] Started cpu monitoring
+2024-03-13 12:48:34,326 DEBUG   HandlerThread:70777 [system_info.py:probe():150] Probing system
+2024-03-13 12:48:34,327 INFO    SystemMonitor:70777 [interfaces.py:start():190] Started disk monitoring
+2024-03-13 12:48:34,328 INFO    SystemMonitor:70777 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-13 12:48:34,330 INFO    SystemMonitor:70777 [interfaces.py:start():190] Started memory monitoring
+2024-03-13 12:48:34,332 INFO    SystemMonitor:70777 [interfaces.py:start():190] Started network monitoring
+2024-03-13 12:48:34,339 DEBUG   HandlerThread:70777 [system_info.py:_probe_git():135] Probing git
+2024-03-13 12:48:34,400 DEBUG   HandlerThread:70777 [system_info.py:_probe_git():143] Probing git done
+2024-03-13 12:48:34,400 DEBUG   HandlerThread:70777 [system_info.py:probe():198] Probing system done
+2024-03-13 12:48:34,400 DEBUG   HandlerThread:70777 [system_monitor.py:probe():223] {'os': 'macOS-14.4-arm64-arm-64bit', 'python': '3.9.16', 'heartbeatAt': '2024-03-13T07:18:34.327105', 'startedAt': '2024-03-13T07:18:33.278921', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/sreekrishna/Krishi_DSS/KDSS_ML/pipepine.py', 'codePathLocal': 'pipepine.py', 'codePath': 'pipepine.py', 'git': {'remote': 'https://github.com/tsreekrishna/KDSS_ML.git', 'commit': '0077ddbb2dbca92ae741c2133b266839fbf97601'}, 'email': None, 'root': '/Users/sreekrishna/Krishi_DSS/KDSS_ML', 'host': 'SreeKrishnas-MacBook-Pro.local', 'username': 'sreekrishna', 'executable': '/Users/sreekrishna/miniconda3/envs/krishna/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 99.43769836425781}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-13 12:48:34,400 INFO    HandlerThread:70777 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-13 12:48:34,400 INFO    HandlerThread:70777 [system_monitor.py:probe():227] Publishing system info
+2024-03-13 12:48:34,401 DEBUG   HandlerThread:70777 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-03-13 12:48:35,220 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/conda-environment.yaml
+2024-03-13 12:48:47,186 DEBUG   HandlerThread:70777 [system_info.py:_save_conda():219] Saving conda packages done
+2024-03-13 12:48:47,188 INFO    HandlerThread:70777 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-13 12:48:47,195 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:48:47,195 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-13 12:48:47,196 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-13 12:48:47,196 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:48:47,196 DEBUG   SenderThread:70777 [sender.py:send():378] send: files
+2024-03-13 12:48:47,196 INFO    SenderThread:70777 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-13 12:48:47,265 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/conda-environment.yaml
+2024-03-13 12:48:47,265 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/wandb-metadata.json
+2024-03-13 12:48:48,426 INFO    wandb-upload_0:70777 [upload_job.py:push():131] Uploaded file /var/folders/0p/hnyrmqzx4b5fcz9shr7hqwgr0000gq/T/tmpg_5artudwandb/5bl036uc-wandb-metadata.json
+2024-03-13 12:48:48,506 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-13 12:48:48,507 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: python_packages
+2024-03-13 12:48:48,508 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:48:48,508 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:48:48,508 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:48:48,837 DEBUG   SenderThread:70777 [sender.py:send():378] send: telemetry
+2024-03-13 12:48:49,275 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/requirements.txt
+2024-03-13 12:48:49,276 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:48:49,849 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:48:51,283 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:48:54,872 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:48:59,892 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:03,335 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:49:03,508 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:49:03,509 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:49:03,511 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:49:07,748 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:08,351 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/config.yaml
+2024-03-13 12:49:13,210 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:18,230 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:18,514 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:49:18,514 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:49:18,514 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:49:23,960 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:28,981 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:33,515 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:49:33,515 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:49:33,515 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:49:34,337 DEBUG   SystemMonitor:70777 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-13 12:49:34,338 DEBUG   SenderThread:70777 [sender.py:send():378] send: telemetry
+2024-03-13 12:49:34,338 DEBUG   SenderThread:70777 [sender.py:send():378] send: stats
+2024-03-13 12:49:34,339 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:39,361 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:40,504 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/config.yaml
+2024-03-13 12:49:44,748 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:48,520 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:49:48,521 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:49:48,521 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:49:49,901 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:49:51,556 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:49:55,805 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:00,828 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:03,525 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:50:03,525 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:50:03,526 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:50:08,546 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-13 12:50:08,578 DEBUG   SenderThread:70777 [sender.py:send():378] send: stats
+2024-03-13 12:50:08,578 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:13,600 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:18,527 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-13 12:50:18,527 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:50:18,527 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:50:18,529 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:50:18,945 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:23,966 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:28,989 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:33,529 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-13 12:50:33,529 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-13 12:50:33,530 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: stop_status
+2024-03-13 12:50:33,531 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:50:38,297 DEBUG   SenderThread:70777 [sender.py:send():378] send: stats
+2024-03-13 12:50:38,297 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:38,885 DEBUG   SenderThread:70777 [sender.py:send():378] send: telemetry
+2024-03-13 12:50:38,885 DEBUG   SenderThread:70777 [sender.py:send():378] send: exit
+2024-03-13 12:50:38,885 INFO    SenderThread:70777 [sender.py:send_exit():585] handling exit code: 1
+2024-03-13 12:50:38,886 INFO    SenderThread:70777 [sender.py:send_exit():587] handling runtime: 124
+2024-03-13 12:50:38,890 INFO    SenderThread:70777 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-13 12:50:38,890 INFO    SenderThread:70777 [sender.py:send_exit():593] send defer
+2024-03-13 12:50:38,891 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,891 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-13 12:50:38,892 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,892 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-13 12:50:38,893 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 1
+2024-03-13 12:50:38,893 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,893 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-13 12:50:38,893 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,894 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-13 12:50:38,894 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 2
+2024-03-13 12:50:38,894 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,894 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-13 12:50:38,894 INFO    HandlerThread:70777 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-13 12:50:38,894 DEBUG   SystemMonitor:70777 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-13 12:50:38,894 DEBUG   SystemMonitor:70777 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-13 12:50:38,899 INFO    HandlerThread:70777 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-13 12:50:38,900 INFO    HandlerThread:70777 [interfaces.py:finish():202] Joined disk monitor
+2024-03-13 12:50:38,900 INFO    HandlerThread:70777 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-13 12:50:38,900 INFO    HandlerThread:70777 [interfaces.py:finish():202] Joined memory monitor
+2024-03-13 12:50:38,900 INFO    HandlerThread:70777 [interfaces.py:finish():202] Joined network monitor
+2024-03-13 12:50:38,900 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,901 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-13 12:50:38,901 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 3
+2024-03-13 12:50:38,901 DEBUG   SenderThread:70777 [sender.py:send():378] send: stats
+2024-03-13 12:50:38,901 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,902 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-13 12:50:38,902 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,902 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-13 12:50:38,902 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 4
+2024-03-13 12:50:38,902 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,902 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-13 12:50:38,903 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,903 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-13 12:50:38,903 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 5
+2024-03-13 12:50:38,903 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,903 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-13 12:50:38,903 DEBUG   SenderThread:70777 [sender.py:send():378] send: summary
+2024-03-13 12:50:38,909 INFO    SenderThread:70777 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-13 12:50:38,910 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,910 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-13 12:50:38,910 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 6
+2024-03-13 12:50:38,910 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:38,910 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-13 12:50:38,911 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:38,911 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-13 12:50:38,916 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:39,497 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 7
+2024-03-13 12:50:39,497 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:39,497 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-13 12:50:39,497 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:39,497 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-13 12:50:39,782 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/config.yaml
+2024-03-13 12:50:39,782 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:50:39,783 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/wandb-summary.json
+2024-03-13 12:50:39,881 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:41,791 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:50:42,892 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 8
+2024-03-13 12:50:42,893 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:42,893 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:42,893 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-13 12:50:42,894 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:42,894 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-13 12:50:42,894 INFO    SenderThread:70777 [job_builder.py:build():298] Attempting to build job artifact
+2024-03-13 12:50:42,898 INFO    SenderThread:70777 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-03-13 12:50:43,091 INFO    SenderThread:70777 [job_builder.py:build():404] adding wandb-job metadata file
+2024-03-13 12:50:43,123 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 9
+2024-03-13 12:50:43,124 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:43,124 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-13 12:50:43,124 DEBUG   SenderThread:70777 [sender.py:send():378] send: artifact
+2024-03-13 12:50:43,802 INFO    Thread-12 :70777 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:50:43,886 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:44,900 INFO    SenderThread:70777 [sender.py:send_artifact():1443] sent artifact job-https___github.com_tsreekrishna_KDSS_ML.git_pipepine.py - {'id': 'QXJ0aWZhY3Q6NzUyNTg5NTAy', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0Nzk0OTA3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzU0MDM0ODQ5', 'versionIndex': 2}}}
+2024-03-13 12:50:44,900 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:44,900 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-13 12:50:44,900 INFO    SenderThread:70777 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-13 12:50:44,901 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: status_report
+2024-03-13 12:50:45,813 INFO    SenderThread:70777 [dir_watcher.py:finish():388] scan: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files
+2024-03-13 12:50:45,814 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/requirements.txt requirements.txt
+2024-03-13 12:50:45,814 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log output.log
+2024-03-13 12:50:45,817 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/config.yaml config.yaml
+2024-03-13 12:50:45,819 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/wandb-summary.json wandb-summary.json
+2024-03-13 12:50:45,819 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/conda-environment.yaml conda-environment.yaml
+2024-03-13 12:50:45,823 INFO    SenderThread:70777 [dir_watcher.py:finish():402] scan save: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/wandb-metadata.json wandb-metadata.json
+2024-03-13 12:50:45,823 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 10
+2024-03-13 12:50:45,824 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:45,825 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:45,826 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-13 12:50:45,827 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:45,827 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-13 12:50:45,827 INFO    SenderThread:70777 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-13 12:50:45,889 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:45,889 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:46,519 INFO    wandb-upload_0:70777 [upload_job.py:push():131] Uploaded file /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/requirements.txt
+2024-03-13 12:50:46,648 INFO    wandb-upload_3:70777 [upload_job.py:push():131] Uploaded file /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/wandb-summary.json
+2024-03-13 12:50:46,665 INFO    wandb-upload_2:70777 [upload_job.py:push():131] Uploaded file /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/config.yaml
+2024-03-13 12:50:46,667 INFO    wandb-upload_1:70777 [upload_job.py:push():131] Uploaded file /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/output.log
+2024-03-13 12:50:46,802 INFO    wandb-upload_4:70777 [upload_job.py:push():131] Uploaded file /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/files/conda-environment.yaml
+2024-03-13 12:50:46,891 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:46,892 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:47,008 INFO    Thread-11 :70777 [sender.py:transition_state():613] send defer: 11
+2024-03-13 12:50:47,010 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:47,010 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-13 12:50:47,011 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:47,011 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-13 12:50:47,012 INFO    SenderThread:70777 [file_pusher.py:join():178] waiting for file pusher
+2024-03-13 12:50:47,015 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 12
+2024-03-13 12:50:47,015 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:47,015 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-13 12:50:47,015 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:47,015 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-13 12:50:47,015 INFO    SenderThread:70777 [file_stream.py:finish():595] file stream finish called
+2024-03-13 12:50:47,894 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:48,232 INFO    SenderThread:70777 [file_stream.py:finish():599] file stream finish is done
+2024-03-13 12:50:48,233 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 13
+2024-03-13 12:50:48,233 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:48,233 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:48,234 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-13 12:50:48,234 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:48,234 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-13 12:50:48,234 INFO    SenderThread:70777 [sender.py:transition_state():613] send defer: 14
+2024-03-13 12:50:48,234 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: defer
+2024-03-13 12:50:48,235 INFO    HandlerThread:70777 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-13 12:50:48,235 DEBUG   SenderThread:70777 [sender.py:send():378] send: final
+2024-03-13 12:50:48,235 DEBUG   SenderThread:70777 [sender.py:send():378] send: footer
+2024-03-13 12:50:48,235 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: defer
+2024-03-13 12:50:48,235 INFO    SenderThread:70777 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-13 12:50:48,236 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-13 12:50:48,236 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: poll_exit
+2024-03-13 12:50:48,237 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-13 12:50:48,238 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: server_info
+2024-03-13 12:50:48,239 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-13 12:50:48,239 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-13 12:50:48,239 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: server_info
+2024-03-13 12:50:48,239 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: job_info
+2024-03-13 12:50:48,645 DEBUG   SenderThread:70777 [sender.py:send_request():405] send_request: job_info
+2024-03-13 12:50:48,647 DEBUG   HandlerThread:70777 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-13 12:50:48,647 INFO    HandlerThread:70777 [handler.py:finish():869] shutting down handler
+2024-03-13 12:50:49,247 INFO    WriterThread:70777 [datastore.py:close():296] close: /Users/sreekrishna/Krishi_DSS/KDSS_ML/wandb/run-20240313_124833-okqv09pt/run-okqv09pt.wandb
+2024-03-13 12:50:49,649 INFO    SenderThread:70777 [sender.py:finish():1521] shutting down sender
+2024-03-13 12:50:49,650 INFO    SenderThread:70777 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-13 12:50:49,650 INFO    SenderThread:70777 [file_pusher.py:join():178] waiting for file pusher

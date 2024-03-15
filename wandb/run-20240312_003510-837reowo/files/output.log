@@ -1,8 +1,0 @@
-
-Data Preprocessing done!
-Traceback (most recent call last):
-  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 39, in run_experiment
-    crop_map_dict = early_crop_map_modelling(X_train, X_val, y_train, y_val,
-  File "/scratchi/KDSS/kdss_ml/src/crop_type_classification/train_model.py", line 17, in early_crop_map_modelling
-    params = {'n_estimators':np.arange(n_estimators),
-TypeError: unsupported operand type(s) for -: 'list' and 'int'

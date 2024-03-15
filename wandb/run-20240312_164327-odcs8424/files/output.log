@@ -1,0 +1,15 @@
+
+Preprocessing the data containing 29963 samples...
+  Data Preprocessing done!
+  Number of crop samples:  26859
+Training and tuning model.....
+RangeIndex(start=0, stop=14334, step=1)
+Model training and tuning done!
+Traceback (most recent call last):
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/pipepine.py", line 48, in run_experiment
+    test_reports, tar_vs_fns, conf_mat = rabi_models_testing(X_test, y_test, crop_map_dict,
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/crop_type_classification/eval.py", line 22, in rabi_models_testing
+    tar_vs_fns = target_vs_fns_plot(test_scores, fns_used)
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/utils/helper.py", line 112, in target_vs_fns_plot
+    sns.lineplot(y=np.array(test_scores)[:,0], x=fns_used, label='precision_min_class (Mustard)', marker="o")
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed

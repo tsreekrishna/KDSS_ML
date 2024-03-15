@@ -1,0 +1,1 @@
+{"columns": ["Actual", "Predicted", "nPredictions"], "data": [["Mustard", "Mustard", 471.0], ["Mustard", "Wheat", 22.0], ["Mustard", "Potato", 19.0], ["Wheat", "Mustard", 23.0], ["Wheat", "Wheat", 5796.0], ["Wheat", "Potato", 7.0], ["Potato", "Mustard", 25.0], ["Potato", "Wheat", 15.0], ["Potato", "Potato", 779.0]]}

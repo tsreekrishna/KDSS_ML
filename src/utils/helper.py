@@ -91,9 +91,11 @@ def target_metric(y_true, y_pred, raw_metric, tuning_metric_type):
     raw_metric = metric_map[raw_metric]
     if tuning_metric_type == 'harmonic_mean':
         tuning_metric = len(raw_metric) / np.sum(1.0 / raw_metric)
+    elif tuning_metric_type =='min_precision':
+        tuning_metric = np.min(raw_metric)
     return tuning_metric
 
-def grid_search(X_train, y_train, X_val, y_val, param_grid, raw_metric, tuning_metric_type):
+def grid_search(X_train, X_val, y_train, y_val, param_grid, raw_metric, tuning_metric_type):
     val_metrics = []
     for p in param_grid:
         classifier = train_model(X_train, y_train, **p)
@@ -120,16 +122,16 @@ def target_vs_fns_plot(test_scores, fns_used):
     return fig
 
 def confusion_matrix_plot(confusion_matrices, fns_used):
-    plt.figure(figsize=(17,35))
+    matrix_plots = []
     for i in range(len(confusion_matrices)):
-        plt.subplot(6,2,i+1)
+        plt.figure(figsize=(40,30))
         sns.heatmap(confusion_matrices[i], annot=True, cmap='Blues', fmt='g')
         plt.xlabel('Predicted Class')
         plt.ylabel('Actual Class/GT')
         plt.title(f'Fns Used: [{fns_used[i]}]')
-    fig = plt.gcf()
-    plt.close()
-    return fig
+        matrix_plots.append(plt.gcf()) 
+        plt.close()
+    return matrix_plots
 
 def pickling(task, object, path):
     if task == 'write':

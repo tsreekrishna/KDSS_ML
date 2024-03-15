@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/scratchi/KDSS/crop_type_classification/pipepine.py", line 12, in run_experiment
-    preprocessed_data, outliers = data_preprocess(wandb.config['dataset']['cleaning']['input_path'])
-  File "/scratchi/KDSS/crop_type_classification/src/data_preprocessing/rabi_season.py", line 21, in data_preprocess
-    with open(data_path, 'rb') as file:
-FileNotFoundError: [Errno 2] No such file or directory: '/scratchi/KDSS/crop_type_classification/../data/raw_bronze_format.csv'

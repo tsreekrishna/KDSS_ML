@@ -1,0 +1,1 @@
+{"conf_mat": {"_type": "image-file", "sha256": "23b6153ceb73f4a24760c06345844b46a937a2eaa679db5eea40a987c829c57c", "size": 63431, "path": "media/images/conf_mat_0_23b6153ceb73f4a24760.png", "format": "png", "width": 1700, "height": 3500}, "_timestamp": 1710312827.471127, "_runtime": 132.8875970840454, "_step": 0, "_wandb": {"runtime": 131}}

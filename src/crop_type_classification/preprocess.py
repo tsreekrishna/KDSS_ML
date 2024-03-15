@@ -28,6 +28,8 @@ def rabi_data_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataF
     features.append('crop_type')
     data = raw_data[features]
     outliers = gp.GeoDataFrame()
+    
+    print(f'1. Preprocessing data containing {raw_data.shape[0]} samples...')
 
     # Imputing the NDVI fornights with the averages if the dip is greater than 20 when compared to both adjs 
     data = data.apply(dip_impute, axis=1)
@@ -52,8 +54,7 @@ def rabi_data_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataF
     # Dropping the duplicates (if any)
     data = data.drop_duplicates()
     
-    print('Data Preprocessing done!')
-
+    print('---> Data Preprocessing done!\n---> Total number of preprocessed & unrejected crop samples:', data.shape[0], '\n')
     return data, outliers
 
 if __name__ == '__main__': 

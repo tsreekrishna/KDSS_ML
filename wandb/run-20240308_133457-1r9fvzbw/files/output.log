@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/scratchi/KDSS/crop_type_classification/pipepine.py", line 12, in run_experiment
-    preprocessed_data, outliers = data_preprocess(wandb.config['dataset']['input_path'])
-KeyError: 'input_path'

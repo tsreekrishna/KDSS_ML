@@ -1,0 +1,27 @@
+
+Preprocessing the data containing 29963 samples...
+  Data Preprocessing done!
+  Number of crop samples:  26859
+Training and tuning model.....
+                                      oct_1f  oct_2f  nov_1f  nov_2f  dec_1f  ...  feb_2f  mar_1f  mar_2f  apr_1f  apr_2f
+9fa7204c-6628-4276-802c-a84f8dc2cde4   156.0   116.0   107.0   123.0   167.0  ...   124.0   130.0   141.0   137.0   155.0
+ee581c64-7b53-4cc9-b0f9-42f801508e6f   139.0   142.0   126.0   126.0   154.0  ...   183.0   158.0   127.0   117.0   116.0
+31b73d1b-3ed4-417b-ad22-f1bd31d41a00   174.0   160.0   133.0   128.0   124.0  ...   182.0   179.0   165.0   135.0   117.0
+58a2d483-2103-4294-92bd-1974becd7bb0   154.0   152.0   125.0   125.0   151.0  ...   183.0   175.0   139.0   120.0   116.0
+35ecf266-1e4d-4561-8ee6-50bb1fabde9e   153.0   150.0   143.0   126.0   127.0  ...   182.0   181.0   170.0   141.0   116.0
+...                                      ...     ...     ...     ...     ...  ...     ...     ...     ...     ...     ...
+dd1b447f-080e-43bb-947e-1cb3af15e26e   125.0   124.0   140.0   123.0   124.0  ...   190.0   186.0   151.0   127.0   117.0
+018d31ed-a5a8-4562-9ae3-783d604ed49f   173.0   157.0   127.0   128.0   129.0  ...   185.0   180.0   157.0   131.0   117.0
+93aaee16-0e03-4296-937f-141284bd983f   183.0   178.0   146.0   119.0   122.0  ...   187.0   178.0   154.0   119.0   123.0
+5776b294-f6ed-411e-af2c-db3ecba26bd6   126.0   124.0   119.0   119.0   125.0  ...   187.0   172.0   129.0   121.0   124.0
+a6102538-7dc1-4da7-b7fd-1a35b2666b5e   162.0   162.0   157.0   132.0   125.0  ...   183.0   177.0   143.0   124.0   120.0
+[5368 rows x 14 columns]
+Model training and tuning done!
+Traceback (most recent call last):
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/pipepine.py", line 48, in run_experiment
+    test_reports, tar_vs_fns, conf_mat = rabi_models_testing(X_test, y_test, crop_map_dict,
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/crop_type_classification/eval.py", line 22, in rabi_models_testing
+    tar_vs_fns = target_vs_fns_plot(test_scores, fns_used)
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/utils/helper.py", line 112, in target_vs_fns_plot
+    sns.lineplot(y=np.array(test_scores)[:,0], x=fns_used, label='precision_min_class (Mustard)', marker="o")
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed

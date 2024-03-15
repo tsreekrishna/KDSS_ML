@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 42, in run_experiment
-    crop_map_dict = early_crop_map_modelling(X_train, X_val, y_train, y_val,
-  File "/scratchi/KDSS/kdss_ml/src/crop_type_classification/train_model.py", line 16, in early_crop_map_modelling
-    fort_nights = list(X_train.columns)
-AttributeError: 'numpy.ndarray' object has no attribute 'columns'

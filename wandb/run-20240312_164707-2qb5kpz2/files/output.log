@@ -1,0 +1,49 @@
+
+Preprocessing the data containing 29963 samples...
+  Data Preprocessing done!
+  Number of crop samples:  26859
+Index([1a27b757-0a82-4ee7-b574-7a4ce0a508a4,
+       8cc4a958-9296-4923-ac25-506c2a8f0d31,
+       3b1f0858-580c-46d9-8339-b2f2888a8669,
+       583052b7-3506-4667-9b2c-1c4c79508ed6,
+       30d331d2-53a9-4131-87b5-30d5507999ee,
+       e432fc3d-64b6-43d7-845b-5cdaa95495d3,
+       8eb6821b-04e8-40f8-aaf1-c2688d449e84,
+       36070d12-b015-416b-b9c4-03bed2ba2f47,
+       50c59b97-c478-4235-b3b6-aad2b688d4c2,
+       a1620f1a-baf5-4dcd-a4be-6e945986e8b1,
+       ...
+       c4cf78c2-0f65-4e25-80f3-7356095576c8,
+       b93dc2a4-caf8-4f1a-b516-bbb1ef5feb64,
+       de6d31a6-d3df-45dd-aa46-b9d88f649b3d,
+       72fdeac6-3f7f-4a37-81ed-658759c00685,
+       14c8f3ef-e46f-4a1d-b5ce-2b1753398452,
+       aaf8fad0-007d-410d-8355-288156cb9411,
+       834cbe4f-c3b2-43f7-9ce5-53f6ebd845b6,
+       283058f3-ffb3-4b81-9cbf-e66f8a7ce77a,
+       dbdc391e-45d1-40e5-9d1a-71d722d27ed0,
+       a1cba245-e609-48f9-ab45-547561e0f194],
+      dtype='object', length=26859)
+Training and tuning model.....
+1    5368
+dtype: int64
+Traceback (most recent call last):
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/pipepine.py", line 39, in run_experiment
+    crop_map_dict = early_crop_map_modelling(X_train, X_val, y_train, y_val,
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/crop_type_classification/train_model.py", line 30, in early_crop_map_modelling
+    metric, model = grid_search(temp_X_train, temp_X_val, y_train, y_val, param_grid, raw_metric, tuning_metric_type)
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/utils/helper.py", line 102, in grid_search
+    classifier = train_model(X_train, y_train, **p)
+  File "/Users/sreekrishna/Krishi_DSS/KDSS_ML/src/utils/helper.py", line 85, in train_model
+    classifier.fit(predictors, target)
+  File "/Users/sreekrishna/miniconda3/envs/krishna/lib/python3.9/site-packages/xgboost/core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "/Users/sreekrishna/miniconda3/envs/krishna/lib/python3.9/site-packages/xgboost/sklearn.py", line 1490, in fit
+    self._Booster = train(
+  File "/Users/sreekrishna/miniconda3/envs/krishna/lib/python3.9/site-packages/xgboost/core.py", line 620, in inner_f
+    return func(**kwargs)
+  File "/Users/sreekrishna/miniconda3/envs/krishna/lib/python3.9/site-packages/xgboost/training.py", line 185, in train
+    bst.update(dtrain, i, obj)
+  File "/Users/sreekrishna/miniconda3/envs/krishna/lib/python3.9/site-packages/xgboost/core.py", line 1918, in update
+    _check_call(_LIB.XGBoosterUpdateOneIter(self.handle,
+KeyboardInterrupt

@@ -1,6 +1,0 @@
-
-Data Preprocessing done!
-Traceback (most recent call last):
-  File "/scratchi/KDSS/kdss_ml/pipepine.py", line 17, in run_experiment
-    pickling(task='write', object=preprocessed_data.to_dict(), output_path=preprocess_dict['output_path'])
-TypeError: pickling() got an unexpected keyword argument 'output_path'

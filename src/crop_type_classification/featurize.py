@@ -19,26 +19,28 @@ def train_val_test_split(data, test_size, val_size, stratify, seed=42):
     train, test = train_test_split(train_test, test_size=actual_test_size, stratify=train_test[stratify], random_state=0)
     # Reintroduce the samples to train set with less than 3 occurrences
     train = pd.concat([train, samples_under_three], axis=0)
-    return train, test, val
+    return train, val, test
 
-def label_encode(train, test, val, target, predictors=rabi_fns):
+def label_encode(train, val, test, target, predictors=rabi_fns):
     label_map = {'Mustard':0, 'Wheat':1, 'Potato':2}
     X_train, y_train = train[predictors], train[target]
     X_val, y_val = val[predictors], val[target]
     X_test, y_test = test[predictors], test[target]
-    for target in y_train, y_val, y_test:
-        target = target.apply(lambda row:label_map[row])
-    return X_train, X_test, X_val, y_train, y_test, y_val
+    # Label encoding
+    y_train = y_train.apply(lambda row:label_map[row])
+    y_val = y_val.apply(lambda row:label_map[row])
+    y_test = y_test.apply(lambda row:label_map[row])
+    return X_train, X_val, X_test, y_train, y_val, y_test
 
-def feature_scaling(X_train, X_test, X_val, scaler_type='StandardScaler'):
+def feature_scaling(X_train, X_val, X_test, scaler_type='StandardScaler'):
     if scaler_type == 'StandardScaler':
         scaler = StandardScaler()
     elif scaler_type == 'MinMaxScaler':
         scaler = MinMaxScaler()
-    X_train = pd.DataFrame(scaler.fit_transform(X_train), columns=rabi_fns)
-    for data in X_test, X_val:
-        data = pd.DataFrame(scaler.transform(data), columns=rabi_fns)
-    return X_train, X_test, X_val
+    scaled_X_train = pd.DataFrame(scaler.fit_transform(X_train), columns=rabi_fns, index=X_train.index)
+    scaled_X_val = pd.DataFrame(scaler.transform(X_val), columns=rabi_fns, index=X_val.index)
+    scaled_X_test = pd.DataFrame(scaler.transform(X_test), columns=rabi_fns, index=X_test.index)
+    return scaled_X_train, scaled_X_val, scaled_X_test
 
 
 
