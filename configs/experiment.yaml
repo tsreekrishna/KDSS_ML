@@ -1,12 +1,27 @@
 defaults:
  - artifact_paths: paths
- - featurize: featurization
+ - featurize: 
+      - featurize
+      - splits
+ - inference: eval
  - train: modelling
- - splits:
-    - train
-    - test
-    - val
  - _self_
 
-cleaning:
-  output_path: ${hydra:runtime.cwd}/data/rabi_v1.0
+artifact_paths:  
+  cleaning:
+    output_path: ${hydra:runtime.cwd}/data/preprocessed/rabi_v1.0.pkl
+
+featurize:
+  train_test_split:
+    bool: False
+
+inference:
+  load_models:
+    - oct_1f-apr_2f.pkl
+    - oct_1f-apr_1f.pkl
+  
+
+# train:  
+#   modelling_params:  
+#     bool: False
+

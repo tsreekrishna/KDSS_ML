@@ -1,0 +1,13 @@
+train_test_split:
+  bool: True
+  seed: 42
+  val_size: 0.2
+  test_size: 0.2
+  stratify: [crop_type, sowing_period, harvest_period]
+label_encode:
+  bool: True
+  target: crop_type
+  predictors: ['oct_1f', 'oct_2f', 'nov_1f', 'nov_2f', 'dec_1f', 'dec_2f', 'jan_1f', 'jan_2f', 'feb_1f', 'feb_2f', 'mar_1f', 'mar_2f', 'apr_1f', 'apr_2f']
+scaling:
+  bool: True
+  type: StandardScaler

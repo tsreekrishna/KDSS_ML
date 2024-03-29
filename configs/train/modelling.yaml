@@ -1,8 +1,0 @@
-target: crop_type
-model_type: XGBClassifier
-raw_metric: precision
-tuning_metric_type: harmonic_mean
-seed: 42
-n_estimators: [5, 15, 5] # Start, end and step
-learning_rate: [0.05, 0.55, 0.1] # Start, end and step
-max_depth: [1, 5, 1] # Start, end and step

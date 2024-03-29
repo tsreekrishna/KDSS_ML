@@ -3,14 +3,15 @@ from typing import Dict, List
 from itertools import combinations
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
 import pandas as pd
 import random
-from xgboost import XGBClassifier
 from sklearn.metrics import precision_recall_fscore_support as score
+from sklearn.metrics import RocCurveDisplay
+from sklearn.metrics import PrecisionRecallDisplay
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
+from xgboost import XGBClassifier
 
 def generate_label_set_map(label_map: Dict[str, str]) -> Dict[str, str]:
     set_map = {}
@@ -121,19 +122,61 @@ def target_vs_fns_plot(test_scores, fns_used):
     plt.close()
     return fig
 
-def confusion_matrix_plot(confusion_matrices, fns_used):
-    matrix_plots = []
-    for i in range(len(confusion_matrices)):
-        plt.figure(figsize=(40,30))
-        sns.heatmap(confusion_matrices[i], annot=True, cmap='Blues', fmt='g')
-        plt.xlabel('Predicted Class')
-        plt.ylabel('Actual Class/GT')
-        plt.title(f'Fns Used: [{fns_used[i]}]')
-        matrix_plots.append(plt.gcf()) 
-        plt.close()
-    return matrix_plots
+def plot_roc_curve(X, y, classifier, 
+                            target_labels=['Mustard', 'Wheat', 'Potato'], 
+                            colors=["aqua", "darkorange", "cornflowerblue"]):
+    ohe_true = pd.get_dummies(y, dtype=int)
+    ohe_pred = pd.DataFrame(classifier.predict_proba(X))
 
-def pickling(task, object, path):
+    fig, ax = plt.subplots()
+    for class_id, color in zip(range(len(target_labels)), colors):
+        RocCurveDisplay.from_predictions(
+            ohe_true.loc[:, class_id],
+            ohe_pred.loc[:, class_id],
+            name=f"ROC curve for {target_labels[class_id]}",
+            color=color,
+            ax=ax,
+        )
+    plt.axis("square")
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.title("One-vs-Rest ROC curves")
+    plt.legend()
+    plt.close()
+    return fig
+
+def plot_pr_curve(X, y, classifier, 
+                            target_labels=['Mustard', 'Wheat', 'Potato'], 
+                            colors=["aqua", "darkorange", "cornflowerblue"]):
+    ohe_true = pd.get_dummies(y, dtype=int)
+    ohe_pred = pd.DataFrame(classifier.predict_proba(X))
+    fig, ax = plt.subplots()
+    for class_id, color in zip(range(len(target_labels)), colors):
+        PrecisionRecallDisplay.from_predictions(
+            ohe_true.loc[:, class_id],
+            ohe_pred.loc[:, class_id],
+            name=f"PR Curve for {target_labels[class_id]}",
+            color=color,
+            ax=ax,
+        )
+    # plt.axis("square")
+    plt.xlabel("Recall")
+    plt.ylabel("Precision")
+    plt.title("One-vs-Rest PR curves")
+    plt.legend()
+    plt.close()
+    return fig
+
+def confusion_matrix_plot(confusion_matrix_arr, fns_used):
+    sns.heatmap(confusion_matrix_arr, annot=True, cmap='Blues', fmt='g')
+    plt.xlabel('Predicted Class')
+    plt.ylabel('Actual Class/GT')
+    plt.title(f'Fns Used: [{fns_used}]')
+    cf = plt.gcf()
+    plt.close()
+    return cf
+
+def pickling(task, path, object = None):
     if task == 'write':
         with open(path, 'wb') as handle:
             pickle.dump(object, handle)

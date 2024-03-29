@@ -8,7 +8,7 @@ def early_crop_map_modelling(X_train, X_val, y_train, y_val, n_estimators, learn
     # Seeding
     seed_everything(seed)
     
-    print('2. Training and tuning model.....')
+    print('3. Training and tuning crop classification models...')
    
    # Initializing the variables
     crop_map_dict = {}
@@ -30,9 +30,9 @@ def early_crop_map_modelling(X_train, X_val, y_train, y_val, n_estimators, learn
         metric, model = grid_search(temp_X_train, temp_X_val, y_train, y_val, param_grid, raw_metric, tuning_metric_type)
         fns_used = '-'.join(map(str, temp_X_train.columns[[0,-1]]))
         crop_map_dict[fns_used] = [model, metric]
-        print(f'--->Validation on {len(fort_nights) - i} fns done! Best {tuning_metric_type} of {raw_metric} on validation data is {metric}')
+        print(f'---> Validation on {len(fort_nights) - i} fns done! Best {tuning_metric_type} of {raw_metric} on validation data is {metric}')
         if i == 1:
             break
         i += 1
-    print('--->Model training and tuning done!')
+    print('---> Model training and tuning done!')
     return crop_map_dict
