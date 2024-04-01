@@ -5,7 +5,7 @@ from ..utils.helper import sowing_period, harvest_period, dip_impute, less_than_
 from ..utils.constants import rabi_fns
 import pickle
 
-def rabi_data_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataFrame]):
+def rabi_NDVI_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataFrame]):
     '''
     Preprocess the input data and filter non_crop data points
 
@@ -58,4 +58,4 @@ def rabi_data_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataF
     return data, outliers
 
 if __name__ == '__main__': 
-    rabi_data_preprocess('data/master_pickle_raw')
+    rabi_NDVI_preprocess('data/master_pickle_raw')

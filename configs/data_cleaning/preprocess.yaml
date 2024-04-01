@@ -1,1 +1,3 @@
 bool: True
+input_path: ${hydra:runtime.cwd}/data/raw/master_pickel.pkl
+output_path: ${hydra:runtime.cwd}/data/preprocessed/rabi_v1.0.pkl

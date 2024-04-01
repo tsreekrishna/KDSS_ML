@@ -1,6 +1,0 @@
-cleaning:
-  input_dir_path: ${hydra:runtime.cwd}/data/raw/
-  output_dir_path: ${hydra:runtime.cwd}/data/preprocessed/
-trained_models:
-  output_dir_path: ${hydra:runtime.cwd}/trained_models/
-  input_dir_path: ${hydra:runtime.cwd}/trained_models/
