@@ -1,0 +1,30 @@
+defaults:
+ - data_cleaning: preprocess
+ - featurization: featurize
+ - train: train_model
+ - _self_
+
+data_cleaning:
+  bool: False
+  output_path: ${hydra:runtime.cwd}/data/preprocessed/rabi_v1.0.pkl
+
+featurize:
+  train_val_split:
+    bool: True
+  
+train:  
+  training_params:
+    # n_estimators: 
+    #   - 5 # Start
+    #   - 100 # End
+    #   - 5 # Step
+    # learning_rate:
+    #   - 0.05 # Start
+    #   - 0.55 # End
+    #   - 0.05 # Step
+    # max_depth: 
+    #   - 1 # Start
+    #   - 5 # End
+    #   - 1 # Step
+    tuning_metric_type: class_min
+

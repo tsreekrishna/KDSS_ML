@@ -92,7 +92,7 @@ def target_metric(y_true, y_pred, raw_metric, tuning_metric_type):
     raw_metric = metric_map[raw_metric]
     if tuning_metric_type == 'harmonic_mean':
         tuning_metric = len(raw_metric) / np.sum(1.0 / raw_metric)
-    elif tuning_metric_type =='min_precision':
+    elif tuning_metric_type =='class_min':
         tuning_metric = np.min(raw_metric)
     return tuning_metric
 
@@ -109,6 +109,7 @@ def grid_search(X_train, X_val, y_train, y_val, param_grid, raw_metric, tuning_m
     return best_val_metric, best_model
 
 def target_vs_fns_plot(test_scores, fns_used):
+    plt.figure(figsize=(15,12))
     sns.lineplot(y=np.array(test_scores)[:,0], x=fns_used, label='precision_min_class (Mustard)', marker="o")
     sns.lineplot(y=np.array(test_scores)[:,1], x=fns_used, label='precision_maj_class (Wheat)', marker="o")
     sns.lineplot(y=np.array(test_scores)[:,2], x=fns_used, label='precision_min_class (Potato)', marker="o")
@@ -127,8 +128,7 @@ def plot_roc_curve(X, y, classifier,
                             colors=["aqua", "darkorange", "cornflowerblue"]):
     ohe_true = pd.get_dummies(y, dtype=int)
     ohe_pred = pd.DataFrame(classifier.predict_proba(X))
-
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(10,6))
     for class_id, color in zip(range(len(target_labels)), colors):
         RocCurveDisplay.from_predictions(
             ohe_true.loc[:, class_id],
@@ -137,7 +137,6 @@ def plot_roc_curve(X, y, classifier,
             color=color,
             ax=ax,
         )
-    plt.axis("square")
     plt.xlabel("False Positive Rate")
     plt.ylabel("True Positive Rate")
     plt.title("One-vs-Rest ROC curves")
@@ -145,12 +144,11 @@ def plot_roc_curve(X, y, classifier,
     plt.close()
     return fig
 
-def plot_pr_curve(X, y, classifier, 
-                            target_labels=['Mustard', 'Wheat', 'Potato'], 
+def plot_pr_curve(X, y, classifier, target_labels=['Mustard', 'Wheat', 'Potato'], 
                             colors=["aqua", "darkorange", "cornflowerblue"]):
     ohe_true = pd.get_dummies(y, dtype=int)
     ohe_pred = pd.DataFrame(classifier.predict_proba(X))
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(10,6))
     for class_id, color in zip(range(len(target_labels)), colors):
         PrecisionRecallDisplay.from_predictions(
             ohe_true.loc[:, class_id],
@@ -168,6 +166,7 @@ def plot_pr_curve(X, y, classifier,
     return fig
 
 def confusion_matrix_plot(confusion_matrix_arr, fns_used):
+    plt.figure(figsize=(10,6))
     sns.heatmap(confusion_matrix_arr, annot=True, cmap='Blues', fmt='g')
     plt.xlabel('Predicted Class')
     plt.ylabel('Actual Class/GT')

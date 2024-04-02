@@ -3,9 +3,7 @@ import pandas as pd
 from sklearn.metrics import classification_report
 from ..utils.helper import target_vs_fns_plot, confusion_matrix_plot, plot_roc_curve, plot_pr_curve
 
-def rabi_models_testing(X_test, y_test, crop_map_dict, raw_metric):
-    
-    print('3. Evaluating the best models on test data....')
+def rabi_models_testing(X_test, y_test, fns_models_map, raw_metric):
     
     label_crop_map = {0:'Mustard', 1:'Wheat',2:'Potato'}
     test_reports = []
@@ -13,12 +11,12 @@ def rabi_models_testing(X_test, y_test, crop_map_dict, raw_metric):
     conf_mat_plots = []
     roc_curves = []
     pr_curves = []
-    fns_used = list(crop_map_dict.keys())
+    fns_used = list(fns_models_map.keys())
     
-    for i in range(len(crop_map_dict)):
+    for i in range(len(fns_models_map)):
         strt_fn, end_fn = fns_used[i].split('-')
         temp_X_test = X_test.loc[:, strt_fn:end_fn]
-        classifier = crop_map_dict[fns_used[i]][0]
+        classifier = fns_models_map[fns_used[i]]
         test_pred = classifier.predict(temp_X_test)
         report = classification_report(y_test, test_pred, labels=[0, 1, 2], 
                                        target_names=['Mustard', 'Wheat','Potato'], output_dict=True)

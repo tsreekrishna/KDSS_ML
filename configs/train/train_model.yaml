@@ -1,5 +1,4 @@
 training_params:  
-  bool: True
   target: crop_type
   model_type: XGBClassifier
   raw_metric: precision
@@ -17,4 +16,4 @@ training_params:
     - 1 # Start
     - 5 # End
     - 1 # Step
-model_dir_path: ${hydra:runtime.cwd}/trained_models/
+model_dir_path: ${hydra:runtime.cwd}/trained_models/classifiers/

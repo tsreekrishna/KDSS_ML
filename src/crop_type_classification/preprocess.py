@@ -4,6 +4,7 @@ import pandas as pd
 from ..utils.helper import sowing_period, harvest_period, dip_impute, less_than_150_drop
 from ..utils.constants import rabi_fns
 import pickle
+import time
 
 def rabi_NDVI_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataFrame]):
     '''
@@ -30,6 +31,7 @@ def rabi_NDVI_preprocess(data_path: np.ndarray) -> (str, [pd.DataFrame, pd.DataF
     outliers = gp.GeoDataFrame()
     
     print(f'1. Preprocessing data containing {raw_data.shape[0]} samples...')
+    time.sleep(1)
 
     # Imputing the NDVI fornights with the averages if the dip is greater than 20 when compared to both adjs 
     data = data.apply(dip_impute, axis=1)

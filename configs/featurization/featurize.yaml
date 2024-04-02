@@ -1,7 +1,7 @@
 defaults:
   - splits
 
-train_val_test_split:
+train_val_split:
   bool: True
   seed: 42
   val_size: 0.2
@@ -12,7 +12,6 @@ train_val_test_split:
   - harvest_period
 
 label_encode:
-  bool: True
   predictors: 
   - 'oct_1f'
   - 'oct_2f'
@@ -31,5 +30,5 @@ label_encode:
   target: crop_type
 
 scaling:
-  bool: True
   type: StandardScaler
+  model_dir_path: ${hydra:runtime.cwd}/trained_models/scalers/
